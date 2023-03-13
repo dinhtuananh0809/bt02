@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                const price = 21450;
+        const USDollar = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        });
+        const VND = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+        });
+        console.log('Dollars: ' + USDollar.format(price)); // Dollars: $21,450.00
+        console.log('Việt Nam đồng: ' + VND.format(price)); // Việt Nam đồng: 21.450 ₫
+    </script>
+</body>
+</html>
